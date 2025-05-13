@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/frontend/style/style.css">
+  <link rel="stylesheet" href="/frontend/style/login.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Sign Up | Sign In</title>
+</head>
+
+<body class="bg-light">
+
+  <div class="container py-4">
+    <h2 class="text-center mb-4">To-Do List Web</h2>
+
+    <div class="d-flex justify-content-center align-items-center login">
+      <div class="wrapper">
+        <div class="card-switch">
+          <label class="switch">
+            <input type="checkbox" class="toggle">
+            <span class="slider"></span>
+            <span class="card-side"></span>
+            <div class="flip-card__inner">
+              <div class="flip-card__front">
+                <div class="title">Log in</div>
+                <form class="flip-card__form" id="logform">
+                  <input class="flip-card__input" name="username" placeholder="Username" type="text" id="username1">
+                  <input class="flip-card__input" name="password" placeholder="Password" type="password" id="password">
+                  <p id="logfailed"></p>
+                  <button class="flip-card__btn" id="login" type="submit">Log In</button>
+                </form>
+
+              </div>
+              <div class="flip-card__back">
+                <div class="title">Sign up</div>
+                <form class="flip-card__form" action="" id="signup">
+                  <input class="flip-card__input" placeholder="Username" type="text" id="username2">
+                  <input class="flip-card__input" name="email" placeholder="Email" type="email" id="email">
+                  <input class="flip-card__input" name="password" placeholder="Password" type="password" id="password2">
+                  <button class="flip-card__btn" id="confirm">SignUp</button>
+                </form>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script src="/frontend/fetching/login.js"></script>
+    <script src="/frontend/fetching/signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
